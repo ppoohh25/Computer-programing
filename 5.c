@@ -10,11 +10,20 @@ int main()
 
     int year = live/365;
     live = live%365;
-    printf("%d",live);
     
-    int com = 31;
-    int yon = 30;
-    int feb = 28;
+    int month = 0;
+    
+    int m[] = {30,31,30,30,28,30,31,30,31,30,30,31};
+    
+    int i;
+    for(i = 0;i < 12 && live >= 0;i++){
+        live = live - m[i];
+        month++;
+    }
+    
+    live = live + a;
+    
+    printf("Jack Ma has been living in this world for %d years, %d month, and %d days",year,month,live);
     
     
     return 0;
