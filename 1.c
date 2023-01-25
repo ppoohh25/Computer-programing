@@ -2,8 +2,8 @@
 
 int main()
 {
-     printf("Name : Sadayu Dachdachasunan\n");
-     printf("DOB : November 25, 2003\n");
-     printf("Job : Student");
+     printf("Name : Stephen Curry\n");
+     printf("DOB : March 14, 1988\n");
+     printf("Job : Basketball player");
     return 0;
 }
