@@ -2,11 +2,15 @@
 
 int main()
 {
+    char line[100];
     float num,divided;
     printf("Please enter a number: ");
-    scanf("%f",&num);
+    fgets(line,sizeof(line),stdin);
+    sscanf(line,"%f",&num);
+    
     printf("Divided by: ");
-    scanf("%f",&divided);
+    fgets(line,sizeof(line),stdin);
+    sscanf(line,"%f",&divided);
     printf("Calculation result is: %.3f",num/divided);
     return 0;
 }
