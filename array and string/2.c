@@ -2,27 +2,48 @@
 
 int main()
 {
+    char line[100];
     int a,b,c,d,e,f,g,h,i,j;
     printf("Please enter number 1: ");
-    scanf("%d",&a);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&a);
+    
     printf("Please enter number 2: ");
-    scanf("%d",&b);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&b);
+    
     printf("Please enter number 3: ");
-    scanf("%d",&c);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&c);
+    
     printf("Please enter number 4: ");
-    scanf("%d",&d);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&d);
+    
     printf("Please enter number 5: ");
-    scanf("%d",&e);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&e);
+    
     printf("Please enter number 6: ");
-    scanf("%d",&f);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&f);
+    
     printf("Please enter number 7: ");
-    scanf("%d",&g);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&g);
+    
     printf("Please enter number 8: ");
-    scanf("%d",&h);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&h);
+    
     printf("Please enter number 9: ");
-    scanf("%d",&i);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&i);
+    
     printf("Please enter number 10: ");
-    scanf("%d",&j);
+    fgets(line, sizeof(line),stdin);
+    sscanf(line,"%d",&j);
+    
     printf("The number are %d, %d, %d, %d, %d, %d, %d, %d, %d, %d",a,b,c,d,e,f,g,h,i,j);
     return 0;
 }
