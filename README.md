@@ -1,2 +1,3 @@
 # Computer-programing
-Computer Programing(KMITL)
+Computer Programing(KMITL) 65
+C and Pyhton
