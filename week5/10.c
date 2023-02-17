@@ -19,17 +19,26 @@ int main(){
 
     double aa = pow(b,2)-4*a*c;
 
-    switch (aa > 0)
+    switch (aa >= 0)
     {
     case 1:
-        double x1 = (-1*b+sqrt(aa))/(2*a);
-        double x2 = (-1*b-sqrt(aa))/(2*a);
-        printf("x = %lf , %lf",x1,x2);
+        switch (aa == 0)
+        {
+        case 1:
+            double x3 = -1*b/(2*a);
+            printf("x = %lf",x3);
+            break;
+        
+        default:
+            double x1 = (-1*b+sqrt(aa))/(2*a);
+            double x2 = (-1*b-sqrt(aa))/(2*a);
+            printf("x = %lf , %lf",x1,x2);
+            break;
+        }
         break;
     
     default:
-        double x3 = -1*b/(2*a);
-        printf("x = %lf",x3);
+        printf("Can't slove this");
         break;
     }
 
