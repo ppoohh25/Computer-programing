@@ -1,5 +1,13 @@
 #include <stdio.h>
-#include <math.h>
+
+int p(int a,int b){
+    int answer =1;
+    for(int i = 1;i<=b;i++){
+        answer *=a;
+    }
+
+    return answer;
+}
 
 int main(){
     char line[100];
@@ -11,7 +19,7 @@ int main(){
     sscanf(line,"%d",&a);
 
     for(double i =1;i<=a;i++){
-        b += pow(i,a);
+        b += p(i,a);
     }
 
     printf("%.2lf",b);
