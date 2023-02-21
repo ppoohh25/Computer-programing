@@ -2,8 +2,8 @@
 
 int main(){
 
-    for(int i = 70;i<=700;i++){
-        if(i%90 == 0){
+    for(int i = 1;i<=90;i++){
+        if(90%i == 0){
             printf("%d\t",i);
         }
     }
