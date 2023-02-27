@@ -9,7 +9,7 @@ int main(){
     a = &test;
     printf("Enter number: ");
     fgets(line,sizeof(line),stdin);
-    sscanf(line,"%d",&test);
+    sscanf(line,"%d",a);
     
     
     //printf("hi%d",*a);

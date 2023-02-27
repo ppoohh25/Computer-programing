@@ -12,8 +12,13 @@ int main(){
 
     while (*x != NULL)
     {
-        count++;
-        *(x++);
+        if(*x == ' '){
+            *(x++);
+        }
+        else{
+            count++;
+            *(x++);
+        }
     }
     
     printf("%d",count);

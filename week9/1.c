@@ -2,7 +2,8 @@
 
 int main(){
     char line[100];
-    int *a,*b;
+    int aa,bb;
+    int *a = &aa,*b = &bb;
     printf("input first number:");
     fgets(line,sizeof(line),stdin);
     sscanf(line,"%d",a);
